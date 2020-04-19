@@ -1,0 +1,75 @@
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background: #333;
+    width: 100vw;
+    overflow-x: hidden;
+}
+section{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: odachi;
+    src: url('../Odachi.otf');
+}
+
+p{
+    font-family: roboto;
+    font-size: 1rem;
+}
+
+
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.bold{
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+$margin-padding: ("m": margin, "p": padding);
+$position: ("t": top, "b": bottom, "l": left, "r": right);
+
+@each $abbr, $name in $margin-padding{
+    @each $posAbbr, $posName in $position{
+        @for $i from 1 through 10{
+            .#{$abbr}#{$posAbbr}-#{10 * $i}{
+                #{$name}-#{$posName}: $i * 10px;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 6{
+    h#{$i}{
+        margin: 0;
+        font-family: arial;
+    }
+}
+
+
+@for $i from 0 through 9{
+    .m-#{$i * 10}{
+        margin: $i * 10px
+    }
+    .opa-#{$i}{
+        opacity: $i / 10;
+    }
+}

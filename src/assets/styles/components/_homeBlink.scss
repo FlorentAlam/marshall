@@ -1,0 +1,44 @@
+header{
+    background-image: url('../../assets/images/header3.jpg');
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header-top, .header-bottom{
+        position: relative;
+        span.green-channel, span.pink-channel{
+            position: absolute;
+        }
+        span.basic{
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+        span.green-channel{
+            color: yellowgreen;
+        }
+        span.pink-channel{
+            color: violet;
+        }
+        span{
+            font-family: roboto;
+            transition-duration: .1s;
+            transition-timing-function: ease-in-out;
+        }
+    }
+    .header-top span{
+        letter-spacing: 7px;
+        word-spacing: 8px;
+    }
+    .header-bottom{
+        span{
+            font-family: odachi;
+            font-size: 21vw;
+            letter-spacing: 4px;
+        }
+    }
+}
