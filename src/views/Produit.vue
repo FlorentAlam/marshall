@@ -1,7 +1,7 @@
 <template>
     <div id="product-page" v-if="produit">
         <div class="image-container">
-            <img :src="produit.productPage.mainImage"/>
+            <img :src="`${publicPath + produit.productPage.mainImage}`"/>
             <div class="product-name">
               <h1>{{produit.name}}</h1>
               <p>{{produit.description}}</p>
@@ -10,7 +10,7 @@
         <section class="product-description">
           <h1>{{produit.productPage.header1}}</h1>
           <p>{{produit.productPage.desc1}}</p>
-          <img :src="produit.productPage.image1"/>
+          <img :src="`${publicPath + produit.productPage.image1}`"/>
         </section>
         <section class="product-description">
           <h1>{{produit.productPage.header2}}</h1>
@@ -29,7 +29,8 @@ export default {
   },
   data () {
     return {
-      produit: null
+      produit: null,
+      publicPath: process.env.BASE_URL
     }
   },
   watch: {

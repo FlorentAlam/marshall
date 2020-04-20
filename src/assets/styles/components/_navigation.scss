@@ -1,4 +1,4 @@
-nav{
+.navigation{
     width: 100%;
     align-items: center;
     box-sizing: border-box;
@@ -8,9 +8,8 @@ nav{
     display: flex;
     flex-direction: column;
     z-index: 12;
-    #menu{
+    &_menu{
         background: white;
-        width: 100%;
         height: 100vh;
         left: 0;
         top: 0;
@@ -21,27 +20,20 @@ nav{
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
-        a{
-            width: 50%;
-        }
+        width: 100%;
+        a{ width: 50%; }
         img{
             width: 90%;
             height: 80%;
         }
+        &--hide{
+            transform: translateY(-100%);
+        }
+        &--show{
+            transform: translateY(0);
+        }
     }
-    .hideMenu{
-        transform: translateY(-100%);
-    }
-    .showMenu{
-        transform: translateY(0);
-    }
-    .logo{
-        width: 125px;
-        height: 32px;
-        position: relative;
-        z-index: 4;
-    }
-    button{
+    &_link{
         border: none;
         font-family: roboto;
         background: none;
@@ -49,25 +41,33 @@ nav{
         color: white;
         z-index: 3;
         transition-duration: .2s;
+        &--black a{ color: black; }
+    }
+    &_logo{
+        width: 125px;
+        height: 32px;
+        position: relative;
+        z-index: 4;
+    }
+    &--scrolled{
+        background: white;
+        a{ color: black; }
     }
     
 }
-.windowScrolled{
-    background: white;
-    a{
-        color: black;
-    }
-}
 
 @media screen and (min-width: 450px){
-    nav{
+    .navigation{
         flex-direction: row;
         justify-content: space-between;
-        #menu{
+        &_menu{
             height: 200px;
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            img{
+                width: auto;
+            }
             a{
                 width: 15%;
                 height: 100%;

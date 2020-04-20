@@ -1,7 +1,7 @@
 <template>
     <ScrollOnView :customClass="'product-caracs-images'">
         <div v-for="card in cards" :key="card.link">
-            <img :src="card.link"/>
+            <img :src="`${publicPath + card.link}`"/>
             <h2>{{card.title}}</h2>
             <p>{{card.text}}</p>
         </div>
@@ -13,6 +13,11 @@ import ScrollOnView from './ScrollOnView'
 export default {
   components: {
     ScrollOnView
+  },
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
   },
   props: {
     cards: Array

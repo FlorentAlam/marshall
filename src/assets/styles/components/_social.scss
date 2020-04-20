@@ -31,73 +31,10 @@
     width: 1200vw;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
-    .instaCard{
-        width: 100vw;
-        margin-top: 30px;
-        box-sizing: border-box;
-        padding: 60px;
-        img{
-            width: 100%;
-        }
-        p{
-          text-align: justify;
-        }
-    }
-    .card{
-      height: 100%;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .owner{
-        position: absolute;
-        top: 0;
-        background: white;
-        width: 100%;
-        height: 50px;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition-duration: .3s;
-        transition-timing-function: ease-in-out;
-        transform: translateY(-50px);
-        a{
-          color: black;
-          font-size: 1.2rem;
-          font-family: roboto;
-        }
-      }
-      .likes-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        span{
-          display: flex;
-          align-items: center;
-          font-family: roboto;
-          font-size: 1rem;
-        }
-        i{
-          font-size: 2rem;
-        }
-        i:nth-child(2){
-          color: crimson;
-        }
-      }
-      &:hover{
-        div{
-          transform: translateY(0);
-        }
-      }
-    }
+
 }
 @media screen and (min-width: 500px){
   #feed{
     width: 400vw;
-    .instaCard{
-        width: 33vw;
-      }
   }
 }

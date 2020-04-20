@@ -1,16 +1,16 @@
 <template>
-    <header>
-        <div class="header-top">
-            <span class="green-channel bold opa-4">RESSENTEZ LA</span>
-            <span class="pink-channel bold opa-4">RESSENTEZ LA</span>
-            <span class="basic bold">RESSENTEZ LA</span>
+    <header class="header">
+        <div class="header_top">
+            <span class="green-channel opa-4"><b>RESSENTEZ LA</b></span>
+            <span class="pink-channel opa-4"><b>RESSENTEZ LA</b></span>
+            <span class="basic"><b>RESSENTEZ LA</b></span>
         </div>
-        <div class="header-bottom">
-            <span class="green-channel bold opa-4">PUISSANCE</span>
-            <span class="pink-channel bold opa-4">PUISSANCE</span>
-            <span class="basic bold">PUISSANCE</span>
+        <div class="header_bottom">
+            <span class="green-channel opa-4"><b>PUISSANCE</b></span>
+            <span class="pink-channel opa-4"><b>PUISSANCE</b></span>
+            <span class="basic"><b>PUISSANCE</b></span>
         </div>
-  </header>
+    </header>
 </template>
 
 <script>
@@ -31,7 +31,7 @@ export default {
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       this.animate()
     }
-    const bottom = this.$el.querySelector('.header-bottom')
+    const bottom = this.$el.querySelector('.header_bottom')
     document.addEventListener('mousemove', (event) => {
       bottom.style.transform = `translateX(${-(event.clientX - window.innerWidth / 2) / 50}px) translateY(${-(event.clientY - window.innerHeight / 2) / 50}px)`
     })
@@ -41,9 +41,9 @@ export default {
   },
   methods: {
     initData () {
-      this.$set(this, 'green', document.getElementsByClassName('green-channel'))
-      this.$set(this, 'pink', document.getElementsByClassName('pink-channel'))
-      this.$set(this, 'basic', document.getElementsByClassName('basic'))
+      this.$set(this, 'green', this.$el.getElementsByClassName('green-channel'))
+      this.$set(this, 'pink', this.$el.getElementsByClassName('pink-channel'))
+      this.$set(this, 'basic', this.$el.getElementsByClassName('basic'))
     },
     onBlink () {
       if (this.blinking) {

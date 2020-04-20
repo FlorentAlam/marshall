@@ -1,0 +1,52 @@
+.instagram{
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 60px;
+    &_card{
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:hover &_owner{ transform: translateY(0); }
+        &_owner{
+            position: absolute;
+            top: 0;
+            background: white;
+            width: 100%;
+            height: 50px;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+            transform: translateY(-50px);
+            a{
+                color: black;
+                font-size: 1.2rem;
+                font-family: roboto;
+            }
+        }
+        &_image{ width: 100%; }
+        &_text{ text-align: justify; }
+        &_reactions{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                display: flex;
+                align-items: center;
+                font-family: roboto;
+                font-size: 1rem;
+            }
+            i{ font-size: 2rem; }
+            i:nth-child(2){ color: crimson; }
+        }  
+    }  
+}
+
+@media screen and (min-width: 500px){
+    .instagram{ width: 33vw; }
+}
