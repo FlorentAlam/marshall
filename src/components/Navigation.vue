@@ -1,10 +1,10 @@
 <template>
-    <nav class="pt-30 pl-50 pr-50 fixed navigation" :class="{'navigation--scrolled': isScrolled}">
+    <nav class="pt-20 pb-20 pl-50 pr-50 fixed navigation" :class="{'navigation--scrolled': isScrolled}">
         <router-link to="/">
             <img :src="isScrolled ? `${publicPath}assets/images/marshall-logo-black.svg` : showMenu ? `${publicPath}assets/images/marshall-logo-black.svg` : `${publicPath}assets/images/marshall-logo.svg`" class="navigation_logo" alt="Marshall logo"/>
         </router-link>
-        <button :class="{'navigation_link--black': this.showMenu}" class="bold navigation_link" @click="hideMenu">
-            <router-link to="/nos-produits">Nos produits</router-link>
+        <button :class="{'navigation_link--black': this.showMenu}" class="navigation_link" @click="hideMenu">
+            <router-link to="/nos-produits"><b>Nos produits</b></router-link>
         </button>
         <div :class="{'navigation_menu--show': this.showMenu, 'navigation_menu--hide': !this.showMenu}" class="navigation_menu abs">
             <router-link v-for="produit in produits" :key="produit.link" :to="'/produit/' + produit.link">

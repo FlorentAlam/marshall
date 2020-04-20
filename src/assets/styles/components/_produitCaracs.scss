@@ -1,0 +1,20 @@
+.productCaracs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &_card{
+        display: flex;
+        flex-direction: column;
+        &_img{ width: 100%; }
+        &_title{ text-align: center; }
+        &_description{ text-align: justify; }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .productCaracs{
+        flex-direction: row;
+        justify-content: space-between;
+        &_card{ width: 300px; }
+    }
+}

@@ -1,9 +1,9 @@
 <template>
-  <div class="social-container pb-50">
-    <div class="arrow arrow-left" @click="toLeft"><i class="material-icons">keyboard_arrow_left</i></div>
-    <div class="arrow arrow-right" @click="toRight"><i class="material-icons">keyboard_arrow_right</i></div>
+  <div class="social pb-50">
+    <div class="social_arrow social_arrow_left" @click="toLeft"><i class="material-icons">keyboard_arrow_left</i></div>
+    <div class="social_arrow social_arrow_right" @click="toRight"><i class="material-icons">keyboard_arrow_right</i></div>
     <h2 class="ml-30 pt-60 pb-10">lâche ton hashtag !</h2>
-    <div id="feed" :style="{transform: 'translateX(' + currentTranslation + 'px)'}">
+    <div class="social_feed" :style="{transform: 'translateX(' + currentTranslation + 'px)'}">
       <InstaCard v-for="(data, index) in instaContent" :key="data.node.id" :instaData="data" :instaIndex="index"/>
     </div>
   </div>

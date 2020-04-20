@@ -1,0 +1,115 @@
+.produit{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    &_image{
+      width: 50%;
+      position: relative;
+      z-index: 2;
+    }
+    &_infos{
+      height: 60%;
+      width: 100%;
+      background: rgb(219, 219, 193);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    //   margin: 50px 0;
+      &_description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        height: 80%;
+        width: 80%;
+        padding: 30px 0;
+        h2{
+          font-size: 2.5rem;
+          letter-spacing: 5px;
+          text-align: center;
+        }
+        h3{
+          font-size: 1.5rem;
+          opacity: .5;
+          text-align: center;
+        }
+        a{
+          position: absolute;
+          bottom: -37px;
+          background: white;
+          text-align: center;
+          color: black;
+          padding: 15px 20px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: roboto;
+          transition-duration: .1s;
+          cursor: pointer;
+          &:hover{
+            box-shadow: 2px 2px 5px 2px #00000011;
+          }
+        }
+        p{
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 500px){
+    .produit{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      &_infos{
+          width: 100%;
+        &_description{
+          width: 60%;
+          position: absolute;
+        }
+      }
+      img{
+        position: absolute;
+        height: 80%;
+        width: auto;
+        transition-duration: .2s;
+        transition-timing-function: ease-out;
+      }
+      &--left{
+        img{
+            left: 0;
+            transform: translateX(-200px);
+            &:hover{
+              transform: translateX(-50px);
+            }
+          }
+          .produit_infos{
+              &_description{
+                right: 50px;
+                align-items: flex-end;
+              }
+          }
+      }
+      &--right{
+        img{
+          right: 0;
+          transform: translateX(500px);
+          &:hover{
+            transform: translateX(150px);
+          }
+        }
+        .produit_infos{
+            &_description{
+                left: 50px;
+                align-items: flex-start;
+            }
+        }
+      }
+    }
+  
+  }

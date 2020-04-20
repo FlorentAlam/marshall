@@ -1,6 +1,6 @@
 <template>
   <div class="produits">
-    <h1>Nos Produits</h1>
+    <h1 class="mt-100">NOS PRODUITS</h1>
     <Produit v-for="produit in produits" :produit="produit" :key="produit.link"/>
   </div>
 </template>
@@ -28,11 +28,7 @@ export default {
   position: relative;
   h1{
     text-align: center;
-    font-family: roboto;
-    text-transform: uppercase;
     font-size: 3rem;
-    margin: 0;
-    margin-top: 100px;
     color: white;
   }
   .scrolling-container{
