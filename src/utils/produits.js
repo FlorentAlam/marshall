@@ -62,22 +62,58 @@ const produits = [
   }, {
     name: 'STOCKWELL II',
     slogan: 'VOYAGEZ LÉGER ET PROFITEZ D’UN SON PUISSANT',
-    description: 'Taillée pour la route, cette enceinte portable compacte offre plus de 20 heures de son.',
+    description: 'Pesant seulement 1,4 kg, Stockwell II impose sa puissance malgré sa petite morphologie. Dotée du son Blumlein Stereo Sound, elle offre une expérience multidirectionnelle qui vous immerge dans la musique, en intérieur comme en extérieur.',
     link: 'stockwell-ii',
     image: 'assets/images/ampli.png',
     position: 'left',
     productPage: {
-      mainImage: 'assets/images/ampliBras.png'
+      mainImage: 'assets/images/ampliBras.png',
+      header1: 'SON MULTIDIRECTIONNEL',
+      desc1: 'Stockwell II est dotée du son Blumlein Stereo Sound pour une expérience multidirectionnelle qui vous immerge dans la musique, en intérieur comme en extérieur.',
+      image1: 'assets/images/new-marshall-stockwell-ii-usp02-desktop@1.41x.png',
+      header2: 'PERSONNALISATION DE VOTRE SON',
+      desc2: 'Sur le panneau supérieur de la Stockwell II se trouvent des boutons de contrôle analogique pour régler les basses, les aigus et le volume, et vous permettre d’obtenir exactement le son que vous voulez.',
+      images: [
+        {
+          link: 'assets/images/marshall-stockwell-ii-usp04-Mobile@5x.jpg',
+          title: 'UN DESIGN QUI TIENT LA ROUTE',
+          text: 'Son extérieur en silicone, sa grille en acier et sa résistance à l’humidité classée IPX4 rendent Stockwell II robuste et durable.'
+        }, {
+          link: 'assets/images/marshall-stockwell-ii-usp05-Mobile@5x.jpg',
+          title: 'UN DESIGN RÉSISTANT À L’EAU IPX4',
+          text: 'Stockwell II est classée IPX4 pour la résistance à l’eau, ce qui signifie qu’elle est capable de supporter des éclaboussures accidentelles.'
+        }, {
+          link: 'assets/images/marshall-stockwell-ii-usp06-Mobile@5x.jpg',
+          title: 'FONCTION MULTI-HÔTES',
+          text: 'Stockwell II est dotée d’une fonction multi-hôtes, ce qui lui permet de se connecter à deux appareils Bluetooth et de passer aisément de l’un à l’autre.'
+        }
+      ]
     }
   }, {
     name: 'ACTON II BLUETOOTH',
     slogan: 'THE SMALL BUT MIGHTY WORKHORSE',
-    description: 'L\'enceinte Acton II est peut-être compacte, mais elle offre un son ultra-ample. Dynamique et compacte, elle est dotée de trois amplificateurs de classe D qui alimentent ses deux tweeters et son caisson de basse et produit un son colossal.',
+    description: 'L\'enceinte Acton II est peut-être compacte, mais elle offre un son ultra-ample. Dynamique et compacte, elle est dotée de trois amplificateurs de classe D qui alimentent ses deux tweeters et son caisson de basse et produit un son colossal. Adaptée aux espaces les plus restreints, elle offre néanmoins une expérience audio équilibrée et puissante. Profitez d’un son stéréo d’une qualité exceptionnelle sans fil grace à la technologie Bluetooth 5.0.',
     link: 'acton-ii',
     image: 'assets/images/ampli2.png',
     position: 'right',
     productPage: {
-      mainImage: 'assets/images/ampli2Bras.png'
+      mainImage: 'assets/images/ampli2Bras.png',
+      header1: 'SE CONNECTE SANS FIL AVEC LA TECHNOLOGIE BLUETOOTH 5.0',
+      desc1: 'Bluetooth 5.0 fournit un son sans fil de qualité supérieure sur une portée de 10 mètres tout en conservant la connectivité. Utilisez votre smartphone, tablette ou ordinateur équipé du Bluetooth pour transférer directement votre musique sur votre enceinte sans fil.',
+      image1: 'assets/images/BROWN_marshall-acton-ii-usp2-Desktop_3@1,41x.png',
+      header2: 'UN DESIGN MARSHALL EMBLÉMATIQUE',
+      desc2: 'Combinant technologie contemporaine et design Marshall emblématique, cette enceinte d’apparence classique offre un son sans concession. Vous pourrez l’exhiber fièrement dans n’importe quelle pièce.',
+      images: [
+        {
+          link: 'assets/images/marshall-acton-ii-usp4@1,4x.jpg',
+          title: 'PERSONNALISEZ VOTRE SON',
+          text: 'Réglez votre musique à la mesure de vos exigences. Grâce à l’application Marshall Bluetooth ou aux commandes analogiques sur le panneau supérieur de votre enceinte, vous pouvez adapter sa sonorité à la pièce dans laquelle vous vous trouvez.'
+        }, {
+          link: 'assets/images/marshall-acton-ii-usp5@1,4x.jpg',
+          title: 'CONNECTIVITÉ FILAIRE',
+          text: 'Le Bluetooth 5.0 n’est pas la seule façon de vous connecter. Branchez-vous sur la prise 3,5 mm pour une expérience d’écoute analogique.'
+        }
+      ]
     }
   }
 ]

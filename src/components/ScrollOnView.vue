@@ -1,5 +1,5 @@
 <template>
-    <div class="scrollOnView-container" :class="[customClass]">
+    <div class="scrollOnView" :class="[customClass]">
         <slot></slot>
     </div>
 </template>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .scrollOnView-container{
+    .scrollOnView{
         transition-duration: .4s;
         transition-timing-function: ease-in-out;
         opacity: 0;
