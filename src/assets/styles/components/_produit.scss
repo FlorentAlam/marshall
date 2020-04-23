@@ -1,24 +1,23 @@
 .produit{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-bottom: 50px;
     &_image{
       width: 50%;
       position: relative;
       z-index: 2;
+      margin: 20px 0;
     }
     &_infos{
-      height: 60%;
       width: 100%;
       background: rgb(219, 219, 193);
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-    //   margin: 50px 0;
       &_description{
         display: flex;
         flex-direction: column;
@@ -32,6 +31,7 @@
           font-size: 2.5rem;
           letter-spacing: 5px;
           text-align: center;
+          text-transform: uppercase;
         }
         h3{
           font-size: 1.5rem;
@@ -40,7 +40,7 @@
         }
         a{
           position: absolute;
-          bottom: -37px;
+          bottom: -20px;
           background: white;
           text-align: center;
           color: black;
@@ -61,16 +61,20 @@
     }
   }
 
-  @media screen and (min-width: 500px){
+  @media screen and (min-width: 576px){
     .produit{
       flex-direction: row;
       align-items: center;
       justify-content: center;
       &_infos{
           width: 100%;
+          min-height: 70vh;
         &_description{
           width: 60%;
           position: absolute;
+          a{
+            bottom: -42px;
+          }
         }
       }
       img{
@@ -83,9 +87,9 @@
       &--left{
         img{
             left: 0;
-            transform: translateX(-200px);
+            transform: translateX(-100px);
             &:hover{
-              transform: translateX(-50px);
+              transform: translateX(0px);
             }
           }
           .produit_infos{
@@ -98,9 +102,9 @@
       &--right{
         img{
           right: 0;
-          transform: translateX(500px);
+          transform: translateX(400px);
           &:hover{
-            transform: translateX(150px);
+            transform: translateX(100px);
           }
         }
         .produit_infos{

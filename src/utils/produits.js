@@ -70,7 +70,7 @@ const produits = [
       mainImage: 'assets/images/ampliBras.png',
       header1: 'SON MULTIDIRECTIONNEL',
       desc1: 'Stockwell II est dotée du son Blumlein Stereo Sound pour une expérience multidirectionnelle qui vous immerge dans la musique, en intérieur comme en extérieur.',
-      image1: 'assets/images/new-marshall-stockwell-ii-usp02-desktop@1.41x.png',
+      image1: 'assets/images/new-marshall-stockwell-ii-usp02-desktop@1.jpg',
       header2: 'PERSONNALISATION DE VOTRE SON',
       desc2: 'Sur le panneau supérieur de la Stockwell II se trouvent des boutons de contrôle analogique pour régler les basses, les aigus et le volume, et vous permettre d’obtenir exactement le son que vous voulez.',
       images: [

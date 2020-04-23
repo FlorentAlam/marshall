@@ -8,12 +8,12 @@
             </div>
         </div>
         <section class="productPage_description">
-          <h1>{{produit.productPage.header1}}</h1>
+          <h2>{{produit.productPage.header1}}</h2>
           <p>{{produit.productPage.desc1}}</p>
           <img :src="`${publicPath + produit.productPage.image1}`"/>
         </section>
         <section class="productPage_description">
-          <h1>{{produit.productPage.header2}}</h1>
+          <h2>{{produit.productPage.header2}}</h2>
           <p>{{produit.productPage.desc2}}</p>
           <ProduitCaracs :cards="produit.productPage.images"/>
         </section>

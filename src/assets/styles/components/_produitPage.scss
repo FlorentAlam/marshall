@@ -1,11 +1,12 @@
 .productPage{
-    padding-top: 100px;
+    // padding-top: 100px;
     background: #222;
     &_header{
         height: 100vh;
         display: flex;
         flex-direction: column;
         color: white;
+        position: relative;
         img{
           max-width: 50%;
           }
@@ -37,18 +38,18 @@
       justify-content: space-around;
       box-sizing: border-box;
       padding: 20px 50px;
-      h1{
+      h2{
         font-size: 6vw;
         text-align: center;
       }
       p{
         font-family: roboto;
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
         text-align: justify;
       }
       img{
-        // max-width: 50%;
-        max-height: 400px;
+        width: 100%;
+        max-width: 400px;
       }
     }
 }
