@@ -46,7 +46,9 @@
         }  
     }  
 }
-
-@media screen and (min-width: 500px){
+@media screen and (min-width: 1060px){
     .instagram{ width: 33vw; }
+}
+@media screen and (min-width: 500px){
+    .instagram{ width: 50vw; }
 }

@@ -1,6 +1,6 @@
 const produits = [
   {
-    name: 'MINOR II',
+    name: 'Minor II',
     slogan: 'LIGHT ON YOUR EARS, HEAVY ON SOUND',
     description: 'Le Minor II Bluetooth est doté de transducteurs dynamiques de 14,2 mm réglés sur mesure pour garantir des aigus intenses, des médiums cristallins et des basses claires et équilibrées, qui vous donneront l’impression d’être au centre de la scène. Sa conception intra auriculaire vous fournit juste la bonne dose d’isolation sonore, tout en vous permettant d’entendre ce qui se passe autour de vous.',
     link: 'minor-ii',
@@ -30,7 +30,7 @@ const produits = [
       ]
     }
   }, {
-    name: 'MID A.N.C',
+    name: 'Mid A.N.C',
     slogan: 'ÉVADEZ-VOUS AVEC LE MID A.N.C. À RÉDUCTION DE BRUIT ACTIVE',
     description: 'Le Mid A.N.C. est un casque à réduction de bruit active doté de la technologie Bluetooth aptX. Il offre une qualité audio sans fil supérieure, tout en affaiblissant le bruit environnant afin de vous laisser profiter de ce qui compte le plus : la musique. Il offre jusqu’à 20 heures de lecture sans fil lorsque le contrôle du bruit actif est allumé ou plus de 30 heures de lecture sans fil en l’absence d’ANC.',
     link: 'mid-anc',
@@ -60,7 +60,7 @@ const produits = [
       ]
     }
   }, {
-    name: 'STOCKWELL II',
+    name: 'Stockwell II',
     slogan: 'VOYAGEZ LÉGER ET PROFITEZ D’UN SON PUISSANT',
     description: 'Pesant seulement 1,4 kg, Stockwell II impose sa puissance malgré sa petite morphologie. Dotée du son Blumlein Stereo Sound, elle offre une expérience multidirectionnelle qui vous immerge dans la musique, en intérieur comme en extérieur.',
     link: 'stockwell-ii',
@@ -90,7 +90,7 @@ const produits = [
       ]
     }
   }, {
-    name: 'ACTON II BLUETOOTH',
+    name: 'Acton II bluetooth',
     slogan: 'THE SMALL BUT MIGHTY WORKHORSE',
     description: 'L\'enceinte Acton II est peut-être compacte, mais elle offre un son ultra-ample. Dynamique et compacte, elle est dotée de trois amplificateurs de classe D qui alimentent ses deux tweeters et son caisson de basse et produit un son colossal. Adaptée aux espaces les plus restreints, elle offre néanmoins une expérience audio équilibrée et puissante. Profitez d’un son stéréo d’une qualité exceptionnelle sans fil grace à la technologie Bluetooth 5.0.',
     link: 'acton-ii',

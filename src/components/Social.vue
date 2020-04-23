@@ -27,8 +27,12 @@ export default {
       .then(data => {
         this.$set(this, 'instaContent', data.graphql.user.edge_owner_to_timeline_media.edges)
       })
+    window.addEventListener('resize', () => this.reInitTranslation())
   },
   methods: {
+    reInitTranslation () {
+      this.$set(this, 'currentTranslation', 0)
+    },
     toLeft () {
       if (this.currentTranslation < 0) {
         this.$set(this, 'currentTranslation', this.currentTranslation + window.innerWidth)

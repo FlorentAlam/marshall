@@ -8,7 +8,7 @@
         </button>
         <div :class="{'navigation_menu--show': this.showMenu, 'navigation_menu--hide': !this.showMenu}" class="navigation_menu abs">
             <router-link v-for="produit in produits" :key="produit.link" :to="'/produit/' + produit.link">
-                <img :src="produit.image" :alt="produit.name" @click="hideMenu"/>
+                <img :src="`${publicPath + produit.image}`" :alt="produit.name" @click="hideMenu"/>
             </router-link>
         </div>
     </nav>

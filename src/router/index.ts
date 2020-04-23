@@ -13,18 +13,15 @@ const routes: Array<RouteConfig> = [
   {
     path: '/nos-produits',
     name: 'Produits',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Produits.vue')
+    component: () => import(/* webpackChunkName: "produits" */ '../views/Produits.vue'),
+    meta: {
+      title: 'Nos produits | Marshall'
+    }
   },
   {
     path: '/produit/:id',
     name: 'Produit',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Produit.vue')
+    component: () => import(/* webpackChunkName: "produit" */ '../views/Produit.vue')
   }
 ]
 

@@ -2,9 +2,9 @@
     <ScrollOnView :customClass="'instagram mt-30'">
       <div class="instagram_card">
           <div class="instagram_card_owner">
-              <a :href="'https://www.instagram.com/' + instaData.node.owner.username" target="_blank">{{instaData.node.owner.username | capitalize}}</a>
+              <a :href="'https://www.instagram.com/' + instaData.node.owner.username" target="_blank" rel="external">{{instaData.node.owner.username | capitalize}}</a>
           </div>
-          <a :href="'https://www.instagram.com/p/' + instaData.node.shortcode" target="_blank">
+          <a :href="'https://www.instagram.com/p/' + instaData.node.shortcode" target="_blank" rel="external">
               <img class="instagram_card_image" :src="instaData.node.thumbnail_resources[3].src" :alt="instaData.node.accessibility_caption"/>
           </a>
           <div class="instagram_card_reactions mt-20 mb-20">

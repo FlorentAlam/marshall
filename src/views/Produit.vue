@@ -36,6 +36,7 @@ export default {
   watch: {
     $route (to, from) {
       this.$set(this, 'produit', produits.filter(produit => produit.link === this.$router.currentRoute.params.id)[0])
+      document.title = this.produit.name + ' | Marshall'
     }
   },
   mounted () {

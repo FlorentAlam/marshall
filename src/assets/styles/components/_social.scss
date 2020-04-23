@@ -30,6 +30,11 @@
 }
 @media screen and (min-width: 500px){
   .social_feed{
+    width: 600vw;
+  }
+}
+@media screen and (min-width: 1060px){
+  .social_feed{
     width: 400vw;
   }
 }

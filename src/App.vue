@@ -22,6 +22,11 @@ export default {
     AudioVisualizer,
     Footer
     // Warning
+  },
+  watch: {
+    $route (to, from) {
+      document.title = to.meta.title || 'Marshall'
+    }
   }
 }
 </script>
