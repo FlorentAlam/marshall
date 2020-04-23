@@ -5,10 +5,20 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 8px;
     background: #333;
     width: 100vw;
     overflow-x: hidden;
+}
+@media screen and (min-width: 320px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 576px){
+    body{
+        font-size: 12px;
+    }
 }
 section{
     min-height: 100vh;
