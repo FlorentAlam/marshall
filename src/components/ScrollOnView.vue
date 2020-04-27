@@ -21,9 +21,9 @@ export default {
     this.onScroll()
     this.addListener()
   },
-  destroyed () {
-    this.removeListener()
-  },
+  // destroyed () {
+  //   this.removeListener()
+  // },
   methods: {
     addListener () {
       window.addEventListener('scroll', this.onScroll)
@@ -35,7 +35,6 @@ export default {
       if (window.scrollY >= (this.position - window.innerHeight)) {
         this.$el.style.transform = 'translateY(0)'
         this.$el.style.opacity = 1
-        this.removeListener()
       }
     }
   }

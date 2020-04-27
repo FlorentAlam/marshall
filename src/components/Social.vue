@@ -1,8 +1,8 @@
 <template>
-  <div class="social pb-50">
+  <div class="social pb-3">
     <div class="social__arrow social__arrow-left" @click="toLeft"><i class="material-icons">keyboard_arrow_left</i></div>
     <div class="social__arrow social__arrow-right" @click="toRight"><i class="material-icons">keyboard_arrow_right</i></div>
-    <h2 class="ml-30 pt-60 pb-10">lâche ton hashtag !</h2>
+    <h2 class="ml-2 mt-1 mb-1">lâche ton hashtag !</h2>
     <div class="social__feed" :style="{transform: 'translateX(' + currentTranslation + 'px)'}">
       <InstaCard v-for="(data, index) in instaContent" :key="data.node.id" :instaData="data" :instaIndex="index"/>
     </div>

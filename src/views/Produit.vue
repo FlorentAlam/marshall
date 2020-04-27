@@ -1,21 +1,21 @@
 <template>
-    <div class="productPage" v-if="produit">
-        <div class="productPage_header">
+    <div class="product-page" v-if="produit">
+        <div class="product-page__header">
             <img :src="`${publicPath + produit.productPage.mainImage}`"/>
-            <div class="productPage_header_name">
+            <div class="product-page__name">
               <h1>{{produit.name}}</h1>
               <p>{{produit.description}}</p>
             </div>
         </div>
-        <section class="productPage_description">
+        <section class="product-page__description">
           <h2>{{produit.productPage.header1}}</h2>
           <p>{{produit.productPage.desc1}}</p>
           <img :src="`${publicPath + produit.productPage.image1}`"/>
         </section>
-        <section class="productPage_description">
+        <section class="product-page__description">
           <h2>{{produit.productPage.header2}}</h2>
           <p>{{produit.productPage.desc2}}</p>
-          <ProduitCaracs :cards="produit.productPage.images"/>
+          <produit-caracs :cards="produit.productPage.images"/>
         </section>
     </div>
 </template>
@@ -40,8 +40,8 @@ export default {
     }
   },
   mounted () {
-    document.addEventListener('scroll', () => {
-      this.$el.querySelector('.productPage_header').style.transform = `translateY(${window.scrollY / 3}px)`
+    window.addEventListener('scroll', () => {
+      this.$el.querySelector('.product-page__header').style.transform = `translateY(${window.scrollY / 3}px)`
     })
     this.$set(this, 'produit', produits.filter(produit => produit.link === this.$router.currentRoute.params.id)[0])
   }

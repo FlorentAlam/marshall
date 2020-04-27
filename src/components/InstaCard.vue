@@ -1,5 +1,5 @@
 <template>
-    <ScrollOnView :customClass="'instagram mt-30'">
+    <ScrollOnView :customClass="'instagram'">
       <div class="instagram__card">
           <div class="instagram__owner">
               <a :href="'https://www.instagram.com/' + instaData.node.owner.username" target="_blank" rel="external">{{instaData.node.owner.username | capitalize}}</a>
@@ -7,15 +7,15 @@
           <a :href="'https://www.instagram.com/p/' + instaData.node.shortcode" target="_blank" rel="external">
               <img class="instagram__image" :src="instaData.node.thumbnail_resources[3].src" :alt="instaData.node.accessibility_caption"/>
           </a>
-          <div class="instagram__reactions mt-20 mb-20">
+          <div class="instagram__reactions mt-2 mb-2">
               <span>
                   <i class="material-icons">chat_bubble</i>
-                  <span class="instagram__comments ml-10">
+                  <span class="instagram__comments ml-1">
                       <b>{{instaData.node.edge_media_to_comment.count}}</b>
                   </span>
               </span>
               <span>
-                  <span class="instagram__likes mr-10">
+                  <span class="instagram__likes mr-1">
                       <b>{{instaData.node.edge_liked_by.count}}</b>
                   </span>
                   <i class="material-icons">favorite</i>

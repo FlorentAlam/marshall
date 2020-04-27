@@ -1,5 +1,5 @@
 <template>
-    <nav class="pt-20 pb-20 pl-50 pr-50 fixed navigation" :class="{'navigation--scrolled': isScrolled}">
+    <nav class="pt-2 pb-2 pl-3 pr-3 fixed navigation" :class="{'navigation--scrolled': isScrolled}">
         <router-link to="/">
             <img :src="isScrolled ? `${publicPath}assets/images/marshall-logo-black.svg` : showMenu ? `${publicPath}assets/images/marshall-logo-black.svg` : `${publicPath}assets/images/marshall-logo.svg`" class="navigation_logo" alt="Marshall logo"/>
         </router-link>

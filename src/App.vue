@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <Warning/> -->
     <Navigation/>
     <transition name="fade">
       <router-view/>

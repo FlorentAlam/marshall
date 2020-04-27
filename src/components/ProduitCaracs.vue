@@ -1,9 +1,9 @@
 <template>
-    <ScrollOnView :customClass="'productCaracs'">
-        <div v-for="card in cards" :key="card.link" class="productCaracs_card mt-20">
-            <img :src="`${publicPath + card.link}`" class="productCaracs_card_img"/>
-            <h3 class="productCaracs_card_title mt-10">{{card.title}}</h3>
-            <p class="productCaracs_card_description">{{card.text}}</p>
+    <ScrollOnView :customClass="'product-caracs'">
+        <div v-for="card in cards" :key="card.link" class="product-caracs__card mt-2">
+            <img :src="`${publicPath + card.link}`" class="product-caracs__img"/>
+            <h3 class="product-caracs__title mt-1">{{card.title}}</h3>
+            <p class="product-caracs__description">{{card.text}}</p>
         </div>
     </ScrollOnView>
 </template>

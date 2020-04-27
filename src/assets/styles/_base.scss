@@ -1,13 +1,8 @@
-html{
-    width: 100vw;
-    overflow-x: hidden;
-}
 body{
     margin: 0;
     padding: 0;
     font-size: 8px;
     background: #333;
-    width: 100vw;
     overflow-x: hidden;
 }
 @media screen and (min-width: 320px){
@@ -60,9 +55,9 @@ $position: ("t": top, "b": bottom, "l": left, "r": right);
 
 @each $abbr, $name in $margin-padding{
     @each $posAbbr, $posName in $position{
-        @for $i from 1 through 10{
-            .#{$abbr}#{$posAbbr}-#{10 * $i}{
-                #{$name}-#{$posName}: $i * 10px;
+        @for $i from 1 through 5{
+            .#{$abbr}#{$posAbbr}-#{$i}{
+                #{$name}-#{$posName}: $i * 1em;
             }
         }
     }

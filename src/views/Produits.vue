@@ -1,6 +1,6 @@
 <template>
   <div class="produits">
-    <h1 class="mt-100">NOS PRODUITS</h1>
+    <h1 class="mt-2">NOS PRODUITS</h1>
     <Produit v-for="produit in produits" :produit="produit" :key="produit.link"/>
   </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
     <div class="produit" :class="{'produit--left': produit.position === 'left', 'produit--right': produit.position === 'right'}">
-      <img :src="produit.image" :alt="produit.name" class="produit_image"/>
-        <div class="produit_infos">
-            <div class="produit_infos_description">
+      <img :src="produit.image" :alt="produit.name" class="produit__image"/>
+        <div class="produit__infos">
+            <div class="produit__description">
                 <h2>{{produit.name}}</h2>
                 <h3>{{produit.slogan}}</h3>
                 <p>{{produit.description}}</p>

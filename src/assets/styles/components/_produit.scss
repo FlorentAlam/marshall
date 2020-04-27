@@ -5,58 +5,59 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-    &_image{
+    &__image{
       width: 50%;
       position: relative;
       z-index: 2;
       margin: 20px 0;
     }
-    &_infos{
+    &__infos{
       width: 100%;
       background: rgb(219, 219, 193);
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      &_description{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        height: 80%;
-        width: 80%;
-        padding: 30px 0;
-        h2{
-          font-size: 2.5rem;
-          letter-spacing: 5px;
-          text-align: center;
-          text-transform: uppercase;
+      
+    }
+    &__description{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      height: 80%;
+      width: 80%;
+      padding: 30px 0;
+      h2{
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      h3{
+        font-size: 1.5rem;
+        opacity: .5;
+        text-align: center;
+      }
+      a{
+        position: absolute;
+        bottom: -20px;
+        background: white;
+        text-align: center;
+        color: black;
+        padding: 15px 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: roboto;
+        transition-duration: .1s;
+        cursor: pointer;
+        &:hover{
+          box-shadow: 2px 2px 5px 2px #00000011;
         }
-        h3{
-          font-size: 1.5rem;
-          opacity: .5;
-          text-align: center;
-        }
-        a{
-          position: absolute;
-          bottom: -20px;
-          background: white;
-          text-align: center;
-          color: black;
-          padding: 15px 20px;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-family: roboto;
-          transition-duration: .1s;
-          cursor: pointer;
-          &:hover{
-            box-shadow: 2px 2px 5px 2px #00000011;
-          }
-        }
-        p{
-          text-align: justify;
-        }
+      }
+      p{
+        text-align: justify;
       }
     }
   }
@@ -66,15 +67,15 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      &_infos{
+      &__infos{
           width: 100%;
           min-height: 70vh;
-        &_description{
-          width: 60%;
-          position: absolute;
-          a{
-            bottom: -42px;
-          }
+      }
+      &__description{
+        width: 60%;
+        position: absolute;
+        a{
+          bottom: -42px;
         }
       }
       img{
@@ -92,8 +93,8 @@
               transform: translateX(0px);
             }
           }
-          .produit_infos{
-              &_description{
+          .produit{
+              &__description{
                 right: 50px;
                 align-items: flex-end;
               }
@@ -107,8 +108,8 @@
             transform: translateX(100px);
           }
         }
-        .produit_infos{
-            &_description{
+        .produit{
+            &__description{
                 left: 50px;
                 align-items: flex-start;
             }
