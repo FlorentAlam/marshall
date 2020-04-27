@@ -9,16 +9,35 @@ export default {
   props: {
     customClass: String
   },
+  data () {
+    return {
+      position: 0
+    }
+  },
   mounted () {
     const bounding = this.$el.getBoundingClientRect()
-    const positionFromTop = bounding.top + window.scrollY
+    this.$set(this, 'position', bounding.top + window.scrollY)
     this.$el.style.transform = `translateY(${bounding.height / 2}px)`
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= (positionFromTop - window.innerHeight / 2)) {
+    this.onScroll()
+    this.addListener()
+  },
+  destroyed () {
+    this.removeListener()
+  },
+  methods: {
+    addListener () {
+      window.addEventListener('scroll', this.onScroll)
+    },
+    removeListener () {
+      window.removeEventListener('scroll', this.onScroll)
+    },
+    onScroll () {
+      if (window.scrollY >= (this.position - window.innerHeight)) {
         this.$el.style.transform = 'translateY(0)'
         this.$el.style.opacity = 1
+        this.removeListener()
       }
-    })
+    }
   }
 }
 </script>

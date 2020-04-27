@@ -1,9 +1,9 @@
 <template>
   <div class="social pb-50">
-    <div class="social_arrow social_arrow_left" @click="toLeft"><i class="material-icons">keyboard_arrow_left</i></div>
-    <div class="social_arrow social_arrow_right" @click="toRight"><i class="material-icons">keyboard_arrow_right</i></div>
+    <div class="social__arrow social__arrow-left" @click="toLeft"><i class="material-icons">keyboard_arrow_left</i></div>
+    <div class="social__arrow social__arrow-right" @click="toRight"><i class="material-icons">keyboard_arrow_right</i></div>
     <h2 class="ml-30 pt-60 pb-10">lâche ton hashtag !</h2>
-    <div class="social_feed" :style="{transform: 'translateX(' + currentTranslation + 'px)'}">
+    <div class="social__feed" :style="{transform: 'translateX(' + currentTranslation + 'px)'}">
       <InstaCard v-for="(data, index) in instaContent" :key="data.node.id" :instaData="data" :instaIndex="index"/>
     </div>
   </div>
@@ -22,14 +22,15 @@ export default {
     }
   },
   mounted () {
-    fetch('https://www.instagram.com/marshallheadphones/?__a=1')
-      .then(res => res.json())
-      .then(data => {
-        this.$set(this, 'instaContent', data.graphql.user.edge_owner_to_timeline_media.edges)
-      })
+    this._getFeed()
     window.addEventListener('resize', () => this.reInitTranslation())
   },
   methods: {
+    async _getFeed () {
+      const res = await fetch('https://www.instagram.com/marshallheadphones/?__a=1')
+      const data = await res.json()
+      this.$set(this, 'instaContent', data.graphql.user.edge_owner_to_timeline_media.edges)
+    },
     reInitTranslation () {
       this.$set(this, 'currentTranslation', 0)
     },

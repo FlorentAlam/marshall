@@ -76,10 +76,13 @@ $position: ("t": top, "b": bottom, "l": left, "r": right);
 }
 
 
-@for $i from 0 through 9{
+@for $i from 1 through 5{
     .m-#{$i * 10}{
-        margin: $i * 10px
+        margin: $i * 1%
     }
+}
+
+@for $i from 1 through 10{
     .opa-#{$i}{
         opacity: $i / 10;
     }
